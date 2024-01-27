@@ -5,9 +5,8 @@ A fresh Strapi CMS project with a middleware setup to host a react built site in
 ## Get Started
 
  1. Create your `.env` file. An `.env.example` is provided. Change any required configurations.
- 2. Update favicon.png to your application favicon.
- 3. Run script `npm run develop`
- 4. Once the your cms content types are ready, use `npm start` to serve. You may add contents now or later to your cms.
+ 2. Run script `npm run develop`
+ 3. Once the your cms content types are ready, use `npm start` to serve. You may add contents now or later to your cms.
 
 Reminder: 
 - Content Types must be edited in develop mode! 
@@ -16,7 +15,8 @@ Reminder:
 ### For your React Project
 - Deploy this Strapi CMS to your hosting server first. Allow connections to the server as necessary. Default configured port to run this app is 1337. This can be changed in the .env file.
 - In your react project `package.json` add a key `proxy` with value `http://your-strapi-server` to route all api requests to your strapi cms when the react project is under development in local environment.
-- Once development is complete, `build` your react project, then `copy` contents of the `build folder in your react project` to the `public folder of Strapi` **in your hosted site**.
+- Once development is complete, `build` your react project, then `copy` contents of the `build folder in your react project` to the `public folder of Strapi` **in your hosted server**.
+- Update `favicon.png` in the strapi project's root folder of **your hosted hosted server**. This will be the favicon used for tabs in your application. 
 - Now your react built static site will be hosted at `http://your-strapi-server` of your strapi cms server and the strapi admin panel is accessible from `http://your-strapi-server/admin`
 
 ### Notes
