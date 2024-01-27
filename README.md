@@ -5,8 +5,9 @@ A fresh Strapi CMS project with a middleware setup to host a react built site in
 ## Get Started
 
  1. Create your `.env` file. An `.env.example` is provided. Change any required configurations.
- 2. Run script `npm run develop`
- 3. Once the your cms content types are ready, use `npm start` to serve. You may add contents now or later to your cms.
+ 2. Update favicon.png to your application favicon.
+ 3. Run script `npm run develop`
+ 4. Once the your cms content types are ready, use `npm start` to serve. You may add contents now or later to your cms.
 
 Reminder: 
 - Content Types must be edited in develop mode! 
